@@ -160,5 +160,9 @@ form h2{
 }
 
 #enviroment input[type="text"] {
-    width: 315px;
+    width: 88%;
+}
+
+#enviroment select{
+    width: 90%;
 }
