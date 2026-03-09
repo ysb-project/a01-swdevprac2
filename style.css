@@ -47,7 +47,6 @@ h1 {
 
 .my-name{
     font-family: 'Courier New', Courier, monospace;
-    place-items: center;
     font-size: 110%;
     background-color: white;
     border: 3px dashed;
@@ -59,6 +58,21 @@ h1 {
     margin: 20px auto;
 }
 
+.my-name-1{
+    font-family: 'Courier New', Courier, monospace;
+    place-items: left;
+    font-size: 110%;
+    background-color: white;
+    border: 3px dashed;
+    border-color: lightcoral;
+    padding: 15px;
+    border-radius: 20px;
+    display: block;
+    width: fit-content;
+    
+}
+
+
 form{
     font-family: 'Courier New', Courier, monospace;
     place-items: left;
@@ -68,7 +82,7 @@ form{
     border-radius: 20px;
     display: block;
     width: fit-content;
-    margin: 20px auto;
+    margin: 40px auto;
     padding: 50px;
     line-height: 180%;
 }
@@ -99,7 +113,7 @@ form h2{
 
 .personal-grid {
     display: grid;
-    grid-template-columns: auto 1fr auto 1fr; 
+    grid-template-columns: auto 1fr;
     gap: 15px 10px; 
     align-items: center; 
 }
@@ -143,4 +157,8 @@ form h2{
 .checkbox-group input[type="checkbox"] {
     margin-top: 15px;
     transform: scale(1.5);
+}
+
+#enviroment input[type="text"] {
+    width: 315px;
 }
