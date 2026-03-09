@@ -2,30 +2,32 @@
 <html>
     <head>
         <title>Adopt Me</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1>Adopt Me</h1>
         <form onsubmit="alert('Successfully Submitted!!'); return true;">
-            <div>
+            <div id="personal">
                 <h2>Personal Data</h2>
-                <div id="fullname">
+                <div class="personal-grid">
                     <label for="firstname">First name : </label>
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name" size="20">
-                
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                    
                     <label for="lastname">Last name : </label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" size="20">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    
+                    <label for="phone-number">Phone number : </label>
+                    <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number">
+                    
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email" placeholder="Email">
                 </div>
-                <label for="phone-number">Phone number : </label>
-                <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number" size="20">
-                <label for="email">Email : </label>
-                <input type="email" id="email" name="email" placeholder="Email" size="20">
             </div>
-            <div>
+            <div id="enviroment">
                 <h2>Enviroment</h2>
-                
                 <label for="address">Address : </label>
                 <input type="text" id="address" name="address" placeholder="Address" size="20">
-                <br> Residence :
+                <br><label> Residence : </label>
                 <select id="residence" name="residence" size="1">
                     <option value="Garden-House">Garden House (บ้านสวน)</option>
                     <option value="Single-Detached-House">Single-Detached House (บ้านเดี่ยว)</option>
@@ -34,7 +36,7 @@
                 </select>
                 <br>
                 <div>
-                    Types of care : 
+                    <label>Type of care : </label> 
                     <input type="radio" id="indoor" name="Types-of-Care" value="indoor" checked>
                     <label for="indoor">Indoor</label>
                     <input type="radio" id="outdoor" name="Types-of-Care" value="outdoor" >
@@ -44,13 +46,14 @@
                 <label for="pet-numbers">Current number of pets : </label>
                 <input type="number" id="pet-numbers" name="pet-numbers" min="0" value="0" >
                 <br>
-                <input type="checkbox" id="disclaimer" name="disclaimer"> 
-                <label for="disclaimer">Submitting this form indicates your interest but does not guarantee adoption approval.</label>
-            </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="disclaimer" name="disclaimer"> 
+                    <label for="disclaimer">Submitting this form indicates your interest but does not guarantee adoption approval.</label>
+                </div>
             <button type="submit" >Submit</button>
         </form>
-        <div id="my-name">
-            <p>นางสาวญาณิศา บุญประเสริฐ รหัสนิสิต : 6833055021</p>
+        <div class="my-name">
+            นางสาวญาณิศา บุญประเสริฐ รหัสนิสิต : 6833055021
         </div>
     </body>
 </html>
